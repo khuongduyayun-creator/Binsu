@@ -639,6 +639,7 @@
         .social-under a.facebook:hover { background: #1877f2; border-color: #1877f2; }
         .social-under a.tiktok:hover { background: #000; border-color: #fff; }
         .social-under a.instagram:hover { background: #e4405f; border-color: #e4405f; }
+        .social-under a.spotify:hover { background: #1db954; border-color: #1db954; }
 
         /* ===== GIỚI THIỆU + TRANG TRÍ ===== */
         .info-card .intro {
@@ -1274,7 +1275,7 @@
                 <div class="handle"><i class="fas fa-at"></i>binsu1608</div>
             </div>
             <div class="bio-text">
-                <i class="fas fa-quote-left"></i> Hellu mnn✨
+                <i class="fas fa-quote-left"></i> Hellu moi nguoiii✨
                 <i class="fas fa-quote-right"></i>
             </div>
             <div class="social-under">
@@ -1282,13 +1283,14 @@
                 <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="spotify"><i class="fab fa-spotify"></i></a>
             </div>
         </div>
 
         <!-- GIỚI THIỆU + TRANG TRÍ -->
         <div class="card info-card fade-up">
             <div class="intro">
-                <i class="fas fa-quote-left"></i> BinSu đâyyy! Chào mọi người nhaaa:b <i class="fas fa-quote-right"></i>
+                <i class="fas fa-quote-left"></i> Sẽ nhìu người hỏi toi tsao lại là Binsu mà kphai 1 cái tên nào khác =)) <i class="fas fa-quote-right"></i>
             </div>
             <div class="section-title">
                 <i class="fas fa-heart"></i> Góc nhạc yêu thích
@@ -1557,9 +1559,9 @@
                     'images/gallery/photo3.jpg',
                     'images/gallery/photo4.jpg',
                     'images/gallery/photo5.jpg',
-                    'images/gallery/photo6.jpg'
+                    'images/gallery/photo6.jpg',
                 ];
-                var displayImages = images.slice(0, 3);
+                var displayImages = images.slice(0, 6);
 
                 // Lưu danh sách ảnh để lightbox dùng
                 window.lightboxImages = displayImages;
@@ -1927,6 +1929,7 @@
         facebook: 'https://www.facebook.com/bin.su.359755',      // 👈 Thay link Facebook của bạn
         tiktok: 'https://www.tiktok.com/@binsu1608',         // 👈 Thay link TikTok
         instagram: 'https://www.instagram.com/binsu1608/',    // 👈 Thay link Instagram
+        spotify: 'https://open.spotify.com/user/31ombai4kzdrwtns7wnizhp2xih4?si=18164045eb8b4f89',
     };
 
     const DISCORD_COPY_TEXT = '.catbin';               // 👈 Văn bản sẽ sao chép khi click Discord
@@ -1945,6 +1948,7 @@
             else if (classList.contains('facebook')) type = 'facebook';
             else if (classList.contains('tiktok')) type = 'tiktok';
             else if (classList.contains('instagram')) type = 'instagram';
+            else if (classList.contains('spotify')) type = 'spotify';
 
             if (!type) return;
 
